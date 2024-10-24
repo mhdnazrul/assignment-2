@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTG-GYM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <h1>CTG-GYM</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Get body in <span class="highlight">shape</span> & stay healthy</h1>
+        <p>
+          A huge selection of health and fitness content, healthy recipes, and
+          transformation stories to help you get fit and stay fit!
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn primary-btn">Join Club Now!</a>
+          <a href="#" class="btn secondary-btn">Download App</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/images/Images 2.png" alt="Fitness Trainer" />
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <p>500+</p>
+          <span>Free Workout Videos</span>
+        </div>
+        <div class="stat">
+          <p>350+</p>
+          <span>Video Tutorials</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habits Section -->
+    <section class="habits-section">
+      <h2>Change Your Habits</h2>
+      <p>
+        We believe fitness should be accessible to everyone, everywhere,
+        regardless of income or access to a gym.
+      </p>
+      <div class="habits-grid">
+        <div class="habit-card">
+          <img src="/images/image 3.png" alt="Movement" />
+          <h3>Movement</h3>
+          <p>Fitness should be accessible to everyone</p>
+        </div>
+        <div class="habit-card">
+          <img src="/images/image 2.png" alt="Time" />
+          <h3>Time</h3>
+          <p>Fitness should be accessible to everyone</p>
+        </div>
+        <div class="habit-card">
+          <img src="/images/image 4.png" alt="Practice" />
+          <h3>Practice</h3>
+          <p>Fitness should be accessible to everyone</p>
+        </div>
+        <div class="habit-card">
+          <img src="/images/image 5.png" alt="Weight Loss" />
+          <h3>Weight Loss</h3>
+          <p>Fitness should be accessible to everyone</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo-section">
+      <div class="promo-content">
+        <h1>Run an Extra Mile Easily</h1>
+        <p>
+          Fitness should be accessible to everyone, everywhere, regardless of
+          income or access to a gym. With hundreds of professional workouts.
+        </p>
+        <button class="join-btn" onclick="joinNow()">Join Now</button>
+      </div>
+      <div class="promo-image">
+        <img src="/images/run.jpg" alt="Person running outdoors" />
+      </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training-section">
+      <div class="training-header">
+        <h1>Trainings and Exercises</h1>
+        <p>
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+      </div>
+
+      <div class="training-grid">
+        <div class="training-item">
+          <img src="/images/exercise1.jpg" alt="Exercise 1" />
+          <div class="overlay">
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+        <div class="training-item">
+          <img src="/images/exercise2.png" alt="Exercise 2" />
+          <div class="overlay">
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
+        <div class="training-item">
+          <img src="/images/exercise3.png" alt="Exercise 3" />
+          <div class="overlay">
+            <p>Leg Press: Works the quadriceps and glutes</p>
+          </div>
+        </div>
+        <div class="training-item">
+          <img src="/images/exercise4.png" alt="Exercise 4" />
+          <div class="overlay">
+            <p>Leg Press: Works the quadriceps and glutes</p>
+          </div>
+        </div>
+        <div class="training-item">
+          <img src="/images/exercise5.jpg" alt="Exercise 5" />
+          <div class="overlay">
+            <p>Leg Press: Works the quadriceps and glutes</p>
+          </div>
+        </div>
+        <div class="training-item">
+          <img src="/images/exercise6.jpg" alt="Exercise 6" />
+          <div class="overlay">
+            <p>Leg Press: Works the quadriceps and glutes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BMI Section -->
+    <section class="bmi-section">
+      <div class="bmi-header">
+        <h1>BMI Calculator</h1>
+        <p>Fitness should be accessible to everyone.</p>
+      </div>
+      <div class="bmi-container">
+        <div class="bmi-chart">
+          <h2>BMI Calculator Chart</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 and Above</td>
+                <td>Obese</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="bmi-form">
+          <h2>Calculate your BMI</h2>
+          <form id="bmiCalculator">
+            <input type="number" id="height" placeholder="Height/cm" required />
+            <input type="number" id="weight" placeholder="Weight/kg" required />
+            <input type="number" id="age" placeholder="Age" required />
+            <select id="sex" required>
+              <option value="" disabled selected>Sex</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <select id="activity" required>
+              <option value="" disabled selected>
+                Select an activity factor
+              </option>
+              <option value="sedentary">Sedentary</option>
+              <option value="light">Light Activity</option>
+              <option value="moderate">Moderate Activity</option>
+              <option value="active">Active</option>
+            </select>
+            <button type="submit" class="calculate-btn">Calculate</button>
+          </form>
+        </div>
+      </div>
+      <div id="bmiResult" class="result"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2 class="footer-logo">CTG-GYM</h2>
+          <p>Your journey towards fitness starts here.</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Phone</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 CTG-GYM. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
